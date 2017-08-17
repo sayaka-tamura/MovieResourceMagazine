@@ -1,0 +1,265 @@
+/*Google fonts*/
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700|Roboto:700);
+
+/* Media queries*/
+
+/*Grobal*/
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -icab-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*for responsible images and videos*/
+img,video{width: auto; max-width: 100%; height: auto; display:block;}
+
+/*to fix box size of parent box.*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+ }
+
+a{text-decoration: none;}
+
+a:link, h4 a:link  {color:#FFF;} /*non-visit*/
+a:visited, h4 a:visited  {color:#FFF;} /*visited*/
+a:hover, h4 a:hover {color:#282828;} /*cursol on*/
+
+nav ul li a:link {color:#CCCCCC;} /*non-visit*/
+nav ul li a:visited {color:#CCCCCC;} /*visited*/
+nav ul li a:hover {color:#282828; background:#CCCCCC;} /*cursol on*/
+
+h3 a:link {color:#282828;} /*non-visit*/
+h3 a:visited {color:#282828;} /*visited*/
+h3 a:hover {color:#CCC;} /*cursol on*/
+
+#con-Review ul li a:link {color:#E80C24;} /*non-visit*/
+#con-Review ul li a:visited {color:#E80C24;} /*visited*/
+#con-Review ul li a:hover {color:#282828;} /*cursol on*/
+
+/*img+video for respnsive*/
+img,video{width: auto; max-width: 100%; height: auto; display: block;}
+
+/*	MAIN CONTAINER
+	Set the width to whatever you want the width of your site to be. */
+.container {
+	margin: 0 auto;
+	padding:0;
+}
+
+/*	SELF CLEARING FLOATS - CLEARFIX METHOD */
+
+.container:after,
+.row:after,
+.col:after,
+.clr:after,
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* 	DEFAULT ROW STYLES
+	Set bottom padding according to preference */
+.row {
+	padding-bottom: 0em;
+}
+
+/* DEFAULT COLUMN STYLES */
+.col {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.outside{
+	position: absolute;
+	left: -999em;
+	}
+
+body {
+	font-family: 'Merriweather', serif;
+	font-size: 100%;
+	color: white;
+	margin: 0 auto;
+	padding:0;
+	text-align: center;
+}
+
+h1{
+	font-size: 2.25em;
+	line-height: 1.3;
+}
+
+h2{
+	font-size: 1.313em;
+	line-height: 1.3;
+}
+
+h3{
+	font-size: 1.313em;
+	line-height: 1.3;
+	margin:0.5em;
+}
+
+h4{
+	font-size: 1em;
+	line-height: 1.3;
+}
+
+p{
+	font-size: 0.875em;
+	line-height: 1.3;
+}
+
+#titleLogo {
+	float: left;
+}
+
+#searchFav{
+	float: right;
+}
+
+#favicons{
+	float:right;
+}
+
+nav{
+	clear:both;
+	background-color: #ccc;
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav li{
+  float:left;
+  width: 20%;
+}
+
+nav li a{
+	display:block;
+	line-height: 2em;
+	text-align: center;
+	color:#CCCCCC;
+	background-color: #282828;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+article {
+	text-align: center;
+}
+
+#contents {
+	width: 50%;
+	float: left;
+}
+
+#headline{
+	color: #000;
+	text-align: left;
+}
+
+#con-NewsEvent{
+	width: 25%;
+}
+
+.headlineBox{
+	padding: 0.5em;
+	background-color: #AAA;
+	margin: 0.5em;
+	border-radius: 0.5em
+}
+
+.headlineBox h4{
+	color: #FFF;
+	font-weight: 700;
+}
+
+#con-Review,#con-UpComMovies ,#con-UpcomingDVDs, #con-VideoTheWeek{
+	width: 50%;
+	color: #019fde;
+	text-align: left;
+}
+
+#con-Review h3,#con-UpComMovies h3,#con-UpcomingDVDs h3, #con-VideoTheWeek h3{
+	background-color :#aaa;
+	padding: 0.25em;
+	margin: 0.4em;
+}
+
+#con-Review li {
+	margin: 0.5em;
+	padding: 0 0.2em;
+	font-size: 0.875em;
+}
+
+#con-UpComMovies li, #con-UpcomingDVDs li, #con-VideoTheWeek li {
+	margin: 0.5em;
+	padding: 0.5em;
+	background-color: navy;
+	font-size: 0.875em;
+}
+
+.con-Rev-img{
+	margin-right: 1em;
+	float: left;
+}
+
+.con-Rev-txt{
+	float: left;
+	line-height: 2;
+}
+
+#con-Review .con-Rev-txt{
+	float: left;
+	line-height: 1.5;
+}
+
+#con-Review .title, #con-UpComMovies .title, #con-UpcomingDVDs .title, #con-VideoTheWeek .title{
+	font-size: 0.875em;
+	font-weight:700;
+}
+
+#con-Review .usrR, #con-UpComMovies .usrR,#con-UpcomingDVDs .usrR,#con-VideoTheWeek .usrR{
+	font-size: 0.667em;
+	font-weight:700;
+}
+
+aside {
+	line-height: 44em;
+	text-align: center;
+	width: 25%;
+	float: right;
+}
+
+#latestNews, #facePile{
+margin: 0.5em 0.5em 1.5em;
+}
+
+footer {
+	line-height: 2em;
+	text-align: center;
+	background-color: gray;
+}
+
+.navigation ul li{
+	float:left;
+	margin:0 1em;
+	font-size: 0.875em;
+	}
+
+footer .copyright{
+	float:right;
+	padding:0 2em 0 0;
+	font-size: 0.875em;
+}
